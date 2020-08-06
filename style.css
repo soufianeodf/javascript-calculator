@@ -22,6 +22,7 @@ h1 {
     display: flex;
     flex-direction: column;
 }
+
 .items {
     flex: 1;
     display: flex;
@@ -42,13 +43,27 @@ h1 {
 }
 
 .button {
-    background-color: #ebebeb;
+    background-color: #D8D9DB;
     margin: 0;
     text-align: center;
     line-height: 105.6px;
     font-size: 45px;
     border: 1px solid #000;
     flex: 1;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #ebebeb;
+}
+
+.button:last-child {
+    color: #fff;
+    background-color: #df974c;
+}
+
+.button:last-child:hover {
+    background-color: #dfb07e;
 }
 
 .button-first-line:nth-child(1) {
@@ -62,7 +77,6 @@ h1 {
 
 .button-first-line:nth-child(3) {
     border-width: 0 0 1.1px 1.1px;
-    background-color: #df974c;
 }
 
 .button-second-line:nth-child(1), .button-third-line:nth-child(1), .button-fourth-line:nth-child(1) {
@@ -79,7 +93,6 @@ h1 {
 
 .button-second-line:nth-child(4), .button-third-line:nth-child(4), .button-fourth-line:nth-child(4) {
     border-width: 1.1px 0 1.1px 1.1px;
-    background-color: #df974c;
 }
 
 .button-fifth-line:nth-child(1) {
