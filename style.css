@@ -75,7 +75,7 @@ h1 {
 }
 
 .button-first-line:nth-child(1) {
-    flex: 2;
+    flex: 2.005;
     border-width: 0 1.1px 1.1px 0;
 }
 
@@ -104,7 +104,7 @@ h1 {
 }
 
 .button-fifth-line:nth-child(1) {
-    flex: 3;
+    flex: 3.02;
     border-width: 1.1px 1.1px 0 0;
 }
 
