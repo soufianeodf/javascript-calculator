@@ -57,6 +57,10 @@ h1 {
     background-color: #ebebeb;
 }
 
+.button:active {
+    background-color: #bbbcbe;
+}
+
 .button:last-child {
     color: #fff;
     background-color: #df974c;
@@ -64,6 +68,10 @@ h1 {
 
 .button:last-child:hover {
     background-color: #dfb07e;
+}
+
+.button:last-child:active {
+    background-color: #dd8d37;;
 }
 
 .button-first-line:nth-child(1) {
