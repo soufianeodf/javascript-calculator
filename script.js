@@ -3,8 +3,15 @@ let operand2 = "";
 let operation = "";
 let result = "";
 
-document.querySelector(".main-container").addEventListener("click", function(event) {
+init();
 
+function init() {
+    document.querySelector(".main-container").addEventListener("click", function(event) {
+      calculationLogic(event);
+    }); 
+}
+
+function calculationLogic(event) {
     if(+event.target.innerText >= 0 && +event.target.innerText <= 9 && event.target.className !== "input-style" && event.target.className !== "items") {
         switch(operation) {
             case "":
@@ -38,8 +45,7 @@ document.querySelector(".main-container").addEventListener("click", function(eve
     }else if(event.target.innerText === "←") {
         deleteLastChar();
     }
-    
-});
+}
 
 let makeOperation = (a, b, operation) => {
     switch (operation) {
